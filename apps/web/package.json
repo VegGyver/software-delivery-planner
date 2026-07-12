@@ -12,6 +12,7 @@
     "preview": "vite preview --host 127.0.0.1 --port 4173"
   },
   "dependencies": {
+    "@software-delivery-planner/shared": "workspace:*",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest"

@@ -14,6 +14,7 @@
     "@fastify/cors": "latest",
     "@fastify/swagger": "latest",
     "@fastify/swagger-ui": "latest",
+    "@software-delivery-planner/shared": "workspace:*",
     "fastify": "latest"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { getApiHealth, type HealthResponse } from "../shared/api/healthApi";
+import type { HealthResponse } from "@software-delivery-planner/shared";
+import { getApiHealth } from "../shared/api/healthApi";
 
 export function HomePage() {
   const [health, setHealth] = useState<HealthResponse | null>(null);
