@@ -1,4 +1,8 @@
 import type { FastifyInstance } from "fastify";
+import type {
+  CreateProjectRequest,
+  UpdateProjectRequest
+} from "@software-delivery-planner/shared";
 import {
   createProjectBodySchema,
   errorResponseSchema,
@@ -7,6 +11,18 @@ import {
   projectSchema,
   updateProjectBodySchema
 } from "./schema.js";
+import {
+  createProject,
+  getProjectById,
+  listProjects,
+  ProjectNotFoundError,
+  ProjectValidationError,
+  updateProject
+} from "./service.js";
+
+type ProjectParams = {
+  projectId: string;
+};
 
 export async function projectRoutes(app: FastifyInstance) {
   app.get(
@@ -16,19 +32,20 @@ export async function projectRoutes(app: FastifyInstance) {
         tags: ["Projects"],
         summary: "List projects",
         response: {
-          200: projectListResponseSchema,
-          501: errorResponseSchema
+          200: projectListResponseSchema
         }
       }
     },
     async (_request, reply) => {
-      return reply.code(501).send({
-        message: "Project listing is not implemented yet"
+      const projects = listProjects();
+
+      return reply.code(200).send({
+        projects
       });
     }
   );
 
-  app.post(
+  app.post<{ Body: CreateProjectRequest }>(
     "/projects",
     {
       schema: {
@@ -37,18 +54,28 @@ export async function projectRoutes(app: FastifyInstance) {
         body: createProjectBodySchema,
         response: {
           201: projectSchema,
-          501: errorResponseSchema
+          400: errorResponseSchema
         }
       }
     },
-    async (_request, reply) => {
-      return reply.code(501).send({
-        message: "Project creation is not implemented yet"
-      });
+    async (request, reply) => {
+      try {
+        const project = createProject(request.body);
+
+        return reply.code(201).send(project);
+      } catch (error) {
+        if (error instanceof ProjectValidationError) {
+          return reply.code(400).send({
+            message: error.message
+          });
+        }
+
+        throw error;
+      }
     }
   );
 
-  app.get(
+  app.get<{ Params: ProjectParams }>(
     "/projects/:projectId",
     {
       schema: {
@@ -57,18 +84,31 @@ export async function projectRoutes(app: FastifyInstance) {
         params: projectParamsSchema,
         response: {
           200: projectSchema,
-          501: errorResponseSchema
+          404: errorResponseSchema
         }
       }
     },
-    async (_request, reply) => {
-      return reply.code(501).send({
-        message: "Project detail is not implemented yet"
-      });
+    async (request, reply) => {
+      try {
+        const project = getProjectById(request.params.projectId);
+
+        return reply.code(200).send(project);
+      } catch (error) {
+        if (error instanceof ProjectNotFoundError) {
+          return reply.code(404).send({
+            message: error.message
+          });
+        }
+
+        throw error;
+      }
     }
   );
 
-  app.patch(
+  app.patch<{
+    Params: ProjectParams;
+    Body: UpdateProjectRequest;
+  }>(
     "/projects/:projectId",
     {
       schema: {
@@ -78,14 +118,31 @@ export async function projectRoutes(app: FastifyInstance) {
         body: updateProjectBodySchema,
         response: {
           200: projectSchema,
-          501: errorResponseSchema
+          400: errorResponseSchema,
+          404: errorResponseSchema
         }
       }
     },
-    async (_request, reply) => {
-      return reply.code(501).send({
-        message: "Project update is not implemented yet"
-      });
+    async (request, reply) => {
+      try {
+        const project = updateProject(request.params.projectId, request.body);
+
+        return reply.code(200).send(project);
+      } catch (error) {
+        if (error instanceof ProjectValidationError) {
+          return reply.code(400).send({
+            message: error.message
+          });
+        }
+
+        if (error instanceof ProjectNotFoundError) {
+          return reply.code(404).send({
+            message: error.message
+          });
+        }
+
+        throw error;
+      }
     }
   );
 }
