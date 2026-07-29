@@ -623,7 +623,7 @@ Testing scope:
 **Layer:** shared / api
 **Priority:** must
 **Dependency:** B-010
-**Status:** todo
+**Status:** done
 
 ### Scope
 
