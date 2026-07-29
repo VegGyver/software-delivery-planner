@@ -158,20 +158,20 @@ Use this table to track backlog items.
 
 | ID    | Task                                      | Area          | Layer      | Complexity | Risk   | Estimate | Actual | Variance | AI Assistance | Rework | Status      | Notes                                                |
 | ----- | ----------------------------------------- | ------------- | ---------- | ---------- | ------ | -------: | -----: | -------: | ------------- | ------ | ----------- | ---------------------------------------------------- |
-| B-001 | Create initial project documentation      | Documentation | docs       | S          | Low    |      TBD |    TBD |      TBD | Partial       | None   | In progress | Initial docs created manually with AI support        |
+| B-001 | Create initial project documentation      | Documentation | docs       | S          | Low    |      TBD |    TBD |      TBD | Partial       | None   | Done        | Initial docs created manually with AI support        |
 | B-002 | Define AI-assisted development workflow   | Documentation | docs       | M          | Medium |      TBD |    TBD |      TBD | Heavy         | TBD    | Done        | Long document; should be reviewed after first slices |
 | B-003 | Define Definition of Done                 | Documentation | docs       | S          | Low    |      TBD |    TBD |      TBD | Heavy         | TBD    | Done        | Checklist for task completion                        |
-| B-004 | Create estimation log structure           | Documentation | docs       | S          | Low    |      TBD |    TBD |      TBD | Heavy         | TBD    | In progress | Current file                                         |
-| B-005 | Initialize monorepo                       | Setup         | repo       | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | pnpm workspace setup                                 |
-| B-006 | Setup backend application                 | Backend       | api        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | Fastify + TypeScript + health endpoint               |
-| B-007 | Setup frontend application                | Frontend      | web        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | React + TypeScript + Vite + routing                  |
-| B-008 | Setup shared package                      | Setup         | shared     | S          | Low    |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | Shared DTO/types package                             |
-| B-009 | Setup initial CI                          | CI            | ci         | S          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | GitHub Actions                                       |
-| B-010 | Define Project domain model               | Backend       | shared/api | S          | Low    |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | First domain model                                   |
-| B-011 | Implement Project API contract            | Backend       | api        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | REST endpoints + DTOs                                |
-| B-012 | Implement Project backend logic           | Backend       | api        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | Routes/service/repository/tests                      |
-| B-013 | Implement Project frontend route and page | Frontend      | web        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | Project UI and API integration                       |
-| B-014 | Add Project Setup tests                   | Testing       | tests      | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Todo        | Backend + frontend tests                             |
+| B-004 | Create estimation log structure           | Documentation | docs       | S          | Low    |      TBD |    TBD |      TBD | Heavy         | TBD    | Done        | Current file                                         |
+| B-005 | Initialize monorepo                       | Setup         | repo       | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | pnpm workspace setup                                 |
+| B-006 | Setup backend application                 | Backend       | api        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Fastify + TypeScript + health endpoint               |
+| B-007 | Setup frontend application                | Frontend      | web        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | React + TypeScript + Vite + routing                  |
+| B-008 | Setup shared package                      | Setup         | shared     | S          | Low    |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Shared DTO/types package                             |
+| B-009 | Setup initial CI                          | CI            | ci         | S          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | GitHub Actions                                       |
+| B-010 | Define Project domain model               | Backend       | shared/api | S          | Low    |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | First domain model                                   |
+| B-011 | Implement Project API contract            | Backend       | api        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | REST endpoints + DTOs                                |
+| B-012 | Implement Project backend logic           | Backend       | api        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Routes/service/repository/tests                      |
+| B-013 | Implement Project frontend route and page | Frontend      | web        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Project UI and API integration                       |
+| B-014 | Add Project Setup tests                   | Testing       | tests      | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Backend + frontend tests                             |
 
 ---
 

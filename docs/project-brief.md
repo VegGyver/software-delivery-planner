@@ -1,3 +1,48 @@
+# Project Brief
+
+## Goal
+
+Build a portfolio-grade full-stack application that connects software delivery
+planning, implementation, tracking and KPI analysis in one coherent workflow.
+The established detailed purpose and professional goals are preserved below.
+
+## Users / stakeholders
+
+The primary users are technical professionals, solo developers and small
+delivery teams that need lightweight project planning and tracking. The
+established user profiles are preserved below.
+
+## In scope
+
+The documented v1 scope covers Project Setup, Feature and Task Management,
+Sprint or Phase Planning, a Risk Register, a KPI Dashboard and delivery
+documentation. The detailed MVP and technical scope are preserved below.
+
+## Out of scope
+
+Authentication, complex permissions, real multi-user collaboration, advanced
+reporting, external integrations, cloud deployment automation and the other
+documented v1 exclusions remain out of scope.
+
+## Constraints
+
+Preserve the React, Node.js, TypeScript, REST and pnpm monorepo direction; keep
+the architecture intentionally lightweight; and deliver work through small,
+reviewable, human-verified tasks. Detailed constraints and delivery principles
+are preserved below.
+
+## Success criteria
+
+Success remains a working, tested and documented full-stack portfolio
+application that demonstrates both implementation skill and structured
+software-delivery reasoning.
+
+## Open decisions
+
+- None
+
+---
+
 # Software Delivery Planner — Project Brief v0
 
 ## 1. Project Name

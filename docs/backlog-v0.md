@@ -1,3 +1,5 @@
+# Backlog
+
 # Software Delivery Planner — Backlog v0
 
 ## 1. Purpose
@@ -152,7 +154,7 @@ Initial logical phases:
 **Layer:** docs
 **Priority:** must
 **Dependency:** none
-**Status:** done / in progress
+**Status:** done
 
 ### Scope
 
@@ -183,7 +185,7 @@ Required files:
 **Layer:** docs
 **Priority:** must
 **Dependency:** B-001
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -220,7 +222,7 @@ The document should define:
 **Layer:** docs
 **Priority:** must
 **Dependency:** B-001
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -255,7 +257,7 @@ The Definition of Done should include:
 **Layer:** docs
 **Priority:** must
 **Dependency:** B-001
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -292,7 +294,7 @@ The estimation log should track:
 **Layer:** repo
 **Priority:** must
 **Dependency:** B-001
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -329,7 +331,7 @@ tests/
 **Layer:** api
 **Priority:** must
 **Dependency:** B-005
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -364,7 +366,7 @@ Initial backend should include:
 **Layer:** web
 **Priority:** must
 **Dependency:** B-005
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -402,7 +404,7 @@ Initial frontend should include:
 **Layer:** shared
 **Priority:** must
 **Dependency:** B-005
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -430,7 +432,7 @@ The shared package should be prepared to contain:
 **Layer:** ci
 **Priority:** should
 **Dependency:** B-005, B-006, B-007
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -460,7 +462,7 @@ Initial CI should run:
 **Layer:** shared / api
 **Priority:** must
 **Dependency:** B-008
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -496,7 +498,7 @@ Project fields:
 **Layer:** api
 **Priority:** must
 **Dependency:** B-010
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -527,7 +529,7 @@ PATCH  /projects/:projectId
 **Layer:** api
 **Priority:** must
 **Dependency:** B-011
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -562,7 +564,7 @@ projects/
 **Layer:** web
 **Priority:** must
 **Dependency:** B-012
-**Status:** todo
+**Status:** done
 
 ### Scope
 
@@ -591,7 +593,7 @@ Expected UI:
 **Layer:** tests
 **Priority:** must
 **Dependency:** B-012, B-013
-**Status:** todo
+**Status:** done
 
 ### Scope
 

@@ -1,3 +1,51 @@
+# Architecture Overview
+
+## Applications / packages
+
+- `apps/api`: Fastify + TypeScript backend API.
+- `apps/web`: React + TypeScript + Vite frontend.
+- `packages/shared`: shared TypeScript contracts.
+- `docs`: project, architecture, backlog and delivery-method documentation.
+- `tests/e2e`: reserved for the planned Playwright suite.
+
+## Main technologies
+
+The implemented baseline uses pnpm workspaces, Node.js, TypeScript, Fastify,
+React, Vite, React Router, Vitest, Testing Library, JSON Schema,
+OpenAPI/Swagger and GitHub Actions.
+
+## Layer boundaries
+
+The frontend calls backend resources through API client modules. Backend routes
+use schemas and delegate Project business behavior to a service and repository.
+Cross-layer request, response and domain types live in the shared package.
+
+## Data flow
+
+For the implemented Project slice, the flow is UI → frontend API client →
+Fastify route/schema → service validation → in-memory repository → response.
+
+## External integrations
+
+No external product integration is implemented. Swagger UI exposes local API
+documentation, while authentication and external service integrations remain
+outside the current v1 implementation.
+
+## Existing checks and delivery pipeline
+
+Package scripts provide build, typecheck and Vitest checks. GitHub Actions runs
+install, shared build/typecheck, API typecheck/tests and web typecheck/build.
+Frontend tests and E2E tests are not currently run by CI.
+
+## Constraints / known risks
+
+Persistence is in memory, the Project UI does not expose the API update
+operation, linting is not configured across applications, the root format
+script references undeclared Prettier, and repository/CI pnpm versions differ.
+These are recorded limitations, not adoption changes.
+
+---
+
 # Software Delivery Planner — Architecture Overview v0
 
 ## 1. Purpose
