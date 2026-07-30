@@ -3,6 +3,7 @@ import cors from "@fastify/cors";
 import swagger from "@fastify/swagger";
 import swaggerUi from "@fastify/swagger-ui";
 import { healthRoutes } from "./modules/health/routes.js";
+import { featureRoutes } from "./modules/features/routes.js";
 import { projectRoutes } from "./modules/projects/routes.js";
 
 export async function buildApp() {
@@ -30,6 +31,7 @@ export async function buildApp() {
 
   await app.register(healthRoutes);
   await app.register(projectRoutes);
+  await app.register(featureRoutes);
 
   return app;
 }
