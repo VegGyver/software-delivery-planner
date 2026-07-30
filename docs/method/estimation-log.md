@@ -173,6 +173,7 @@ Use this table to track backlog items.
 | B-013 | Implement Project frontend route and page | Frontend      | web        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Project UI and API integration                       |
 | B-014 | Add Project Setup tests                   | Testing       | tests      | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Backend + frontend tests                             |
 | B-015 | Define Feature domain model               | Backend       | shared/api | TBD        | TBD    |      TBD |    TBD |      TBD | Heavy         | None   | Done        | Feature model and DTOs; shared typecheck passed      |
+| B-041 | Prepare repository for initial publication | Documentation | repo/docs  | TBD        | TBD    |      TBD |    TBD |      TBD | Heavy         | TBD    | Done        | Initial public repository preparation                |
 
 ---
 

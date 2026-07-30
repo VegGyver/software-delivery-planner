@@ -1405,6 +1405,34 @@ Tasks:
 
 ---
 
+## B-041 — Prepare repository for initial public publication
+
+**Feature area:** Portfolio / Documentation
+**Type:** delivery
+**Layer:** repo / docs
+**Priority:** must
+**Dependency:** B-015
+**Status:** done
+
+### Scope
+
+Prepare the work-in-progress repository for its first public publication.
+
+Tasks:
+
+* add a concise current-state README;
+* add the MIT license;
+* complete generated-artifact and environment-file ignore coverage;
+* audit the repository and rewritten public history before publication.
+
+### Acceptance criteria
+
+* Public documentation reflects only implemented behavior.
+* Generated artifacts and private environment files are excluded.
+* Publication checks pass without starting B-016.
+
+---
+
 # 5. Suggested Initial Work Order
 
 The recommended first implementation order is:
