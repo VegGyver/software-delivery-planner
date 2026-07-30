@@ -11,13 +11,14 @@ The repository currently contains:
 
 - a working Project vertical slice with shared contracts, a Fastify REST API,
   in-memory persistence, a React project page and automated tests;
-- shared Feature domain types and request/response contracts;
+- a working Feature backend slice with shared contracts, project-scoped Fastify
+  endpoints, in-memory persistence and automated API tests;
 - OpenAPI documentation for the implemented API;
 - a documented backlog and AI-assisted delivery method.
 
-Feature API behavior and UI, task management, KPI dashboards, sprint planning,
-risk management and E2E coverage are planned but not yet implemented. The next
-planned item is **B-016 — Implement Feature API and backend logic**.
+Feature UI, task management, KPI dashboards, sprint planning, risk management
+and E2E coverage are planned but not yet implemented. The next planned item is
+**B-017 — Implement Feature frontend UI**.
 
 ## Architecture and stack
 

@@ -173,6 +173,7 @@ Use this table to track backlog items.
 | B-013 | Implement Project frontend route and page | Frontend      | web        | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Project UI and API integration                       |
 | B-014 | Add Project Setup tests                   | Testing       | tests      | M          | Medium |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Backend + frontend tests                             |
 | B-015 | Define Feature domain model               | Backend       | shared/api | TBD        | TBD    |      TBD |    TBD |      TBD | Heavy         | None   | Done        | Feature model and DTOs; shared typecheck passed      |
+| B-016 | Implement Feature API and backend logic   | Backend       | api        | TBD        | TBD    |      TBD |    TBD |      TBD | TBD           | TBD    | Done        | Shared build passed; API typecheck passed; requested API test command passed; Vitest reported 3 passed test files and 11 passed tests in total, including 5 passed tests in src/tests/features.test.ts |
 | B-041 | Prepare repository for initial publication | Documentation | repo/docs  | TBD        | TBD    |      TBD |    TBD |      TBD | Heavy         | TBD    | Done        | Initial public repository preparation                |
 
 ---
